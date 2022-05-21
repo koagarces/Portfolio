@@ -14,6 +14,14 @@ const NavBar = styled.div`
 function App() {
   return (
     <div className="App">
+      <NavBar>
+        <a className="navlink">
+          <span className="btnName">Home</span>
+        </a>
+        <a className="navlink">Resume</a>
+        <a className="navlink">Projects</a>
+        <a className="navlink">Contact</a>
+      </NavBar>
       <Routes>
         <Route index element={<Home />} />
       </Routes>

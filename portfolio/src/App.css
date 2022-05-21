@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #000000;
+  background-color: #9e9d9a;
   width: 100%;
 }
 
@@ -35,14 +35,21 @@
 .navlink {
   margin-right: 50px;
   outline-style: double;
+  outline-width: 2px;
   padding: 5px;
-  color: royalblue;
-  box-shadow: 1px 1px 1px 1px #0ff;
+  color: rgb(0, 0, 0);
+  box-shadow: 3px 2px 2px 3px rgb(0, 0, 0);
 }
 .navlink:hover {
   opacity: 50%;
   transform: scale(0.95, 0.95);
 }
+.navlink:active {
+  opacity: 100%;
+  color: black;
+  transform: scale(0.95, 0.95);
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
