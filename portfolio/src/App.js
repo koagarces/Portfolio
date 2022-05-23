@@ -25,7 +25,7 @@ const SideBar = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   flex-wrap: wrap;
-  /* padding-left: 100px; */
+  padding-left: 10px;
 `;
 function App() {
   return (
