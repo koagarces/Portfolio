@@ -16,6 +16,7 @@ export const Contact = () => {
             href="https://www.linkedin.com/in/koa-garces/"
             className="linked"
             target="_blank"
+            rel="noreferrer"
           >
             <SiLinkedin />
           </a>

@@ -1,7 +1,3 @@
-import styled from "styled-components";
-const description = styled.div`
-  color: white;
-`;
 export const About = () => {
   return (
     <div className="aboutSection">
@@ -20,6 +16,7 @@ export const About = () => {
           <img
             className="koa"
             src="https://uniim1.shutterfly.com/render/00-MYObA9_qGTLbUvWfy090B4qqNvdh7monO3KLvLrmGrFAI3RgOFDDf_ZLvK36gFxXVZV51t4MhjbEwRNyGscOgg?cn=THISLIFE&res=medium&ts=1653213735"
+            alt="profile pic"
           />
         </div>
       </div>

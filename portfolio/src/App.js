@@ -49,6 +49,7 @@ function App() {
           href="https://drive.google.com/file/d/1KTeXJM76vxS3M981IpoVIbSEHRmenBAX/view?usp=sharing"
           className="navlink"
           target="_blank"
+          rel="noreferrer"
         >
           <FcDocument />
         </a>
@@ -56,6 +57,7 @@ function App() {
           href="https://github.com/koagarces"
           className="navlink"
           target="_blank"
+          rel="noreferrer"
         >
           <GrGithub />
         </a>
@@ -63,6 +65,7 @@ function App() {
           href="https://www.linkedin.com/in/koa-garces/"
           className="navlink"
           target="_blank"
+          rel="noreferrer"
         >
           <SiLinkedin />
         </a>

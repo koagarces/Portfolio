@@ -15,6 +15,7 @@ export const Home = () => {
           href="https://drive.google.com/file/d/1KTeXJM76vxS3M981IpoVIbSEHRmenBAX/view?usp=sharing"
           className="resume"
           target="_blank"
+          rel="noreferrer"
         >
           Here's my Resume!
         </a>
