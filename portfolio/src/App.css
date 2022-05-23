@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #9e9d9a;
+  background-color: #000000;
   width: 100%;
 }
 
@@ -12,12 +12,15 @@
 
 .App-header {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
+  flex-direction: row;
+
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  padding-left: 150px;
+  width: 600px;
+  margin-top: 100px;
 }
 
 .App-link {
@@ -33,16 +36,27 @@
   }
 }
 .navlink {
-  margin-right: 50px;
-  outline-style: double;
-  outline-width: 2px;
-  padding: 5px;
-  color: rgb(0, 0, 0);
-  box-shadow: 3px 2px 2px 3px rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-weight: 520;
+  font-size: 20px;
+  font-family: helvetica;
+  text-decoration: none;
+  /* border: 2px solid white; */
+  border-radius: 20px;
+  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  background-color: rgb(0, 0, 0);
+  padding: 4px 30px;
+  margin-right: 20px;
 }
 .navlink:hover {
-  opacity: 50%;
-  transform: scale(0.95, 0.95);
+  color: rgb(0, 0, 0);
+
+  background-color: rgb(48, 192, 244);
+  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
 }
 .navlink:active {
   opacity: 100%;
@@ -53,4 +67,139 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.koa {
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+  width: 80%;
+  height: 70%;
+  margin: 0 70px 150px 0;
+}
+
+.photo {
+  display: flex;
+  width: 100%;
+  padding-left: 10%;
+}
+
+.home {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.about {
+  color: black;
+  width: 600px;
+  font-weight: 300;
+}
+
+.icons {
+  color: white;
+  width: 100vh;
+  margin-right: 200px;
+}
+
+@keyframes reactAnimate {
+  0% {
+    left: 200px;
+    top: 100px;
+  }
+  50% {
+    left: 200px;
+    top: 500px;
+  }
+  100% {
+    left: 200px;
+    top: 100px;
+  }
+}
+
+@keyframes jsAnimate {
+  0% {
+    left: 0px;
+    top: 300px;
+  }
+  50% {
+    left: 400px;
+    top: 300px;
+  }
+  100% {
+    left: 0px;
+    top: 300px;
+  }
+}
+
+@keyframes cssAnimate {
+  0% {
+    left: -50px;
+    top: 100px;
+  }
+  50% {
+    left: 350px;
+    top: 450px;
+  }
+  100% {
+    left: -50px;
+    top: 100px;
+  }
+}
+
+@keyframes htmlAnimate {
+  0% {
+    left: 300px;
+    top: 100px;
+  }
+  50% {
+    left: -50px;
+    top: 450px;
+  }
+  100% {
+    left: 300px;
+    top: 100px;
+  }
+}
+
+.reactIcon {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  animation: reactAnimate 2.3s infinite;
+}
+.reactIcon:hover {
+  color: blue;
+}
+.jsIcon:hover {
+  color: yellow;
+}
+
+.cssIcon:hover {
+  color: green;
+}
+
+.htmlIcon:hover {
+  color: red;
+}
+
+.jsIcon {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  animation: jsAnimate 2.6s infinite;
+}
+
+.cssIcon {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  animation: cssAnimate 3s infinite;
+}
+
+.htmlIcon {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  animation: htmlAnimate 2.1s infinite;
 }
