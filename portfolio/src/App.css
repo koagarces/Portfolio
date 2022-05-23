@@ -1,7 +1,8 @@
 .App {
   text-align: center;
   background-color: #000000;
-  width: 100%;
+  background-size: cover;
+  -webkit-background-size: cover;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -21,6 +22,19 @@
   padding-left: 150px;
   width: 600px;
   margin-top: 100px;
+}
+
+.contact-header {
+  min-height: 100vh;
+
+  flex-direction: row;
+
+  font-size: calc(10px + 2vmin);
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  padding-left: 100px;
+  width: 600px;
+  margin-top: 50px;
 }
 
 .App-link {
@@ -72,30 +86,43 @@
 .koa {
   background-color: rgb(255, 255, 255);
   padding: 5px;
-  width: 80%;
-  height: 70%;
-  margin: 0 70px 150px 0;
+  width: 300px;
+  height: auto;
+  margin: 0 70px 200px 0;
 }
 
 .photo {
   display: flex;
   width: 100%;
-  padding-left: 10%;
+  margin-left: 30%;
 }
 
 .home {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 5%;
+  margin-top: 1%;
 }
 
 .about {
-  color: black;
-  width: 600px;
-  font-weight: 300;
+  background-color: rgb(0, 0, 0);
+  width: 400px;
+  font-size: 25px;
+  font-weight: 400;
+  color: white;
+  text-align: left;
+  margin-left: 50%;
+  margin-top: 60px;
 }
-
+.question {
+  width: 400px;
+  font-size: 25px;
+  font-weight: 800;
+  color: white;
+  text-align: left;
+  margin-left: 50%;
+  margin-top: 40px;
+}
 .icons {
   color: white;
   width: 100vh;
@@ -202,4 +229,102 @@
   height: 50px;
   position: relative;
   animation: htmlAnimate 2.1s infinite;
+}
+
+.career:hover {
+  color: black;
+  background-color: red;
+}
+
+.myName:hover {
+  color: black;
+  background-color: yellow;
+}
+
+.tech {
+  color: white;
+}
+
+.skills {
+  margin-top: -40px;
+  margin-bottom: 300px;
+}
+
+.front {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: red;
+  font-size: 35px;
+  display: flex;
+  margin-left: 10%;
+  margin-bottom: 2%;
+}
+
+.front-skills {
+  color: white;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.resume {
+  color: rgb(0, 0, 0);
+  font-weight: 520;
+  font-size: 20px;
+  font-family: helvetica;
+  text-decoration: none;
+  /* border: 2px solid white; */
+  border-radius: 20px;
+  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  background-color: rgb(48, 192, 244);
+  padding: 4px 30px;
+  margin-right: 20px;
+}
+.resume:hover {
+  color: rgb(0, 0, 0);
+
+  background-color: rgb(255, 255, 255);
+  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+}
+.resume:active {
+  opacity: 100%;
+  color: black;
+  transform: scale(0.95, 0.95);
+}
+
+.linked {
+  padding-left: 40px;
+  /* size: 20px; */
+}
+
+.projectText {
+  color: white;
+}
+
+.list-projects {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.ninety {
+  width: 300px;
+  height: 300px;
+}
+.ninety:hover {
+  border-style: solid;
+  border-color: white;
+}
+
+.projectTitle {
+  color: white;
+  margin-bottom: 60px;
 }

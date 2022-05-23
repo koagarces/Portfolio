@@ -6,6 +6,9 @@ import { About } from "./components/About";
 import { Resume } from "./components/Resume";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
+import { FcDocument } from "react-icons/fc";
+import { GrGithub } from "react-icons/gr";
+import { SiLinkedin } from "react-icons/si";
 
 const NavBar = styled.div`
   width: 100%;
@@ -15,6 +18,15 @@ const NavBar = styled.div`
   /* padding-left: 100px; */
 `;
 
+const SideBar = styled.div`
+  width: 10px;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  /* padding-left: 100px; */
+`;
 function App() {
   return (
     <div className="App">
@@ -25,9 +37,6 @@ function App() {
         <Link to={"/about"} className="navlink">
           About
         </Link>
-        <Link to={"/resume"} className="navlink">
-          Resume
-        </Link>
         <Link to={"/projects"} className="navlink">
           Projects
         </Link>
@@ -35,6 +44,30 @@ function App() {
           Contact
         </Link>
       </NavBar>
+      <SideBar>
+        <a
+          href="https://drive.google.com/file/d/1KTeXJM76vxS3M981IpoVIbSEHRmenBAX/view?usp=sharing"
+          className="navlink"
+          target="_blank"
+        >
+          <FcDocument />
+        </a>
+        <a
+          href="https://github.com/koagarces"
+          className="navlink"
+          target="_blank"
+        >
+          <GrGithub />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/koa-garces/"
+          className="navlink"
+          target="_blank"
+        >
+          <SiLinkedin />
+        </a>
+      </SideBar>
+
       <Routes>
         <Route index element={<Home />} />
         <Route path="/about" element={<About />} />

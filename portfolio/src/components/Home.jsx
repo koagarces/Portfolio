@@ -4,8 +4,20 @@ export const Home = () => {
   return (
     <div className="home">
       <div className="App-header">
-        <h1>Hi I'm Koa Garces</h1>
-        <h2>Software Engineer from Southern California</h2>
+        <h1>
+          Hi I'm <span className="myName">Koa Garces</span>
+        </h1>
+        <h2>
+          <span className="career">Software Engineer</span> from Southern
+          California
+        </h2>
+        <a
+          href="https://drive.google.com/file/d/1KTeXJM76vxS3M981IpoVIbSEHRmenBAX/view?usp=sharing"
+          className="resume"
+          target="_blank"
+        >
+          Here's my Resume!
+        </a>
       </div>
       <div className="icons">
         <SiReact className="reactIcon" />
