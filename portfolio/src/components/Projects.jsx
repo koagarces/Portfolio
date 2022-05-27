@@ -1,3 +1,5 @@
+import { GrGithub } from "react-icons/gr";
+
 export const Projects = () => {
   return (
     <div>
@@ -18,6 +20,16 @@ export const Projects = () => {
             Let go that family pressure of being single! Last minute allows you
             to find a last minute plus one for those dreadful family events.
           </p>
+          <p className="projectText">React|Postgres|Express</p>
+          <p className="projectText">node.js|Javascript</p>
+          <a
+            href="https://github.com/koagarces/last_minute"
+            className="navlink"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <GrGithub />
+          </a>
         </a>
         <a
           href="https://mock-ign.herokuapp.com/"
@@ -34,6 +46,16 @@ export const Projects = () => {
             A gaming/entertainment news website with a video play and list of
             videos to choose from.
           </p>
+          <p className="projectText">JavaScript|TypeScript </p>
+          <p className="projectText">Redux|Styled-components</p>
+          <a
+            href="https://github.com/koagarces/Mock-ign"
+            className="navlink"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <GrGithub />
+          </a>
         </a>
         <a
           className="ninety"
@@ -49,6 +71,16 @@ export const Projects = () => {
           <p className="projectText">
             A place to find and share your favcorite 90's memorabilia
           </p>
+          <p className="projectText">Postgres|Express|React|node.js</p>
+          <p className="projectText"> Javascript|Auth|REST|CSS </p>
+          <a
+            href="https://github.com/jenna-allgeier/show_your_90s"
+            className="navlink"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <GrGithub />
+          </a>
         </a>
       </div>
     </div>
