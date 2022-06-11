@@ -331,3 +331,144 @@ img {
   margin-bottom: 60px;
   text-decoration: none;
 }
+
+@media (max-width: 500px) {
+  .navlink {
+    color: white;
+    /* padding: 4px 10px; */
+    /* margin-right: 20px; */
+    font-size: 13px;
+    font-weight: 800;
+  }
+  .navbar {
+    justify-content: space-evenly;
+  }
+  .sidebar {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    /* width: 80px;
+    height: 80px; */
+  }
+  .home {
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 500px;
+  }
+  .App-header {
+    width: 500px;
+    min-height: 50px;
+    margin: 0;
+    margin-bottom: 0px;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+  .icons {
+    /* margin-right: 0; */
+    padding: 0;
+    display: flex;
+    flex-direction: flex-start;
+    margin: 0;
+    width: 300px;
+  }
+  .App {
+    height: 0;
+  }
+  .about {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .home {
+    justify-content: center;
+  }
+  .description {
+    justify-content: center;
+    padding-right: 70%;
+    padding-bottom: 10%;
+  }
+  .question {
+    justify-content: center;
+  }
+  .koa {
+    margin-right: 30px;
+    margin-bottom: 10%;
+  }
+  .photo {
+    padding-left: 20%;
+    margin-right: 0;
+    margin-left: 0;
+    width: 500px;
+  }
+  .skills {
+    width: 300px;
+    padding-left: 20%;
+  }
+  .contact-header {
+    width: 400px;
+    padding-left: 10%;
+    margin-top: 5%;
+  }
+  .scroll {
+    margin-top: 400px;
+  }
+  @keyframes reactAnimate {
+    0% {
+      left: 200px;
+      top: 100px;
+    }
+    50% {
+      left: 200px;
+      top: 300px;
+    }
+    100% {
+      left: 200px;
+      top: 100px;
+    }
+  }
+
+  @keyframes jsAnimate {
+    0% {
+      left: 0px;
+      top: 200px;
+    }
+    50% {
+      left: 300px;
+      top: 200px;
+    }
+    100% {
+      left: 0px;
+      top: 200px;
+    }
+  }
+
+  @keyframes cssAnimate {
+    0% {
+      left: -50px;
+      top: 100px;
+    }
+    50% {
+      left: 300px;
+      top: 200px;
+    }
+    100% {
+      left: -50px;
+      top: 100px;
+    }
+  }
+
+  @keyframes htmlAnimate {
+    0% {
+      left: 200px;
+      top: 100px;
+    }
+    50% {
+      left: -50px;
+      top: 200px;
+    }
+    100% {
+      left: 200px;
+      top: 100px;
+    }
+  }
+}

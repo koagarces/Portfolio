@@ -16,6 +16,10 @@ const NavBar = styled.div`
   padding-top: 40px;
   justify-content: flex-end;
   /* padding-left: 100px; */
+  @media (max-width: 500px) {
+    width: 90%;
+    padding: 10% 0 5% 10%;
+  }
 `;
 
 const SideBar = styled.div`
@@ -30,7 +34,7 @@ const SideBar = styled.div`
 function App() {
   return (
     <div className="App">
-      <NavBar>
+      <NavBar className="navbar">
         <Link to={"/"} className="navlink">
           <span className="btnName">Home</span>
         </Link>
@@ -44,7 +48,7 @@ function App() {
           Contact
         </Link>
       </NavBar>
-      <SideBar>
+      <SideBar className="sidebar ">
         <a
           href="https://drive.google.com/file/d/1KTeXJM76vxS3M981IpoVIbSEHRmenBAX/view?usp=sharing"
           className="navlink"

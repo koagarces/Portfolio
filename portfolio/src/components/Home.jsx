@@ -1,5 +1,8 @@
 import { SiReact, SiJavascript, SiCss3 } from "react-icons/si";
 import { DiHtml5 } from "react-icons/di";
+import { About } from "./About";
+import { Projects } from "./Projects";
+import { Contact } from "./Contact";
 export const Home = () => {
   return (
     <div className="home">
@@ -25,6 +28,11 @@ export const Home = () => {
         <SiJavascript className="jsIcon" />
         <SiCss3 className="cssIcon" />
         <DiHtml5 className="htmlIcon" />
+      </div>
+      <div className="scroll">
+        <About />
+        <Projects />
+        <Contact />
       </div>
     </div>
   );
