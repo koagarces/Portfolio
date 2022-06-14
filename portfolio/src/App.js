@@ -9,6 +9,9 @@ import { Contact } from "./components/Contact";
 import { FcDocument } from "react-icons/fc";
 import { GrGithub } from "react-icons/gr";
 import { SiLinkedin } from "react-icons/si";
+import Burger from "./components/Burger/Burger";
+import Menu from "./components/Menu/Menu";
+import { useState } from "react";
 
 const NavBar = styled.div`
   width: 100%;
@@ -19,6 +22,8 @@ const NavBar = styled.div`
   @media (max-width: 500px) {
     width: 90%;
     padding: 10% 0 5% 10%;
+    pointer-events: none;
+    opacity: 0;
   }
 `;
 
@@ -30,10 +35,23 @@ const SideBar = styled.div`
   justify-content: flex-start;
   flex-wrap: wrap;
   padding-left: 10px;
+
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50px;
+    height: 40px;
+    padding-left: 25%;
+    margin-top: 0;
+  }
 `;
 function App() {
+  const [open, setOpen] = useState(false);
   return (
     <div className="App">
+      <Burger open={open} setOpen={setOpen} />
+      <Menu open={open} />
       <NavBar className="navbar">
         <Link to={"/"} className="navlink">
           <span className="btnName">Home</span>
@@ -48,6 +66,7 @@ function App() {
           Contact
         </Link>
       </NavBar>
+
       <SideBar className="sidebar ">
         <a
           href="https://drive.google.com/file/d/1KTeXJM76vxS3M981IpoVIbSEHRmenBAX/view?usp=sharing"
@@ -55,7 +74,7 @@ function App() {
           target="_blank"
           rel="noreferrer"
         >
-          <FcDocument />
+          <FcDocument className="iconPicture" />
         </a>
         <a
           href="https://github.com/koagarces"
@@ -63,7 +82,7 @@ function App() {
           target="_blank"
           rel="noreferrer"
         >
-          <GrGithub />
+          <GrGithub className="iconPicture" />
         </a>
         <a
           href="https://www.linkedin.com/in/koa-garces/"
@@ -71,7 +90,7 @@ function App() {
           target="_blank"
           rel="noreferrer"
         >
-          <SiLinkedin />
+          <SiLinkedin className="iconPicture" />
         </a>
       </SideBar>
 

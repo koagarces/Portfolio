@@ -348,13 +348,15 @@ img {
   text-decoration: none;
 }
 
+/* Mobile Friendly */
+
 @media (max-width: 500px) {
   .navlink {
     color: white;
     /* padding: 4px 10px; */
     /* margin-right: 20px; */
-    font-size: 13px;
-    font-weight: 800;
+    font-size: 15px;
+    font-weight: 900;
   }
   .navbar {
     justify-content: space-evenly;
@@ -372,11 +374,11 @@ img {
     max-width: 500px;
   }
   .App-header {
-    width: 500px;
+    width: 400px;
     min-height: 50px;
     margin: 0;
     margin-bottom: 0px;
-    padding-left: 0;
+    padding-left: 14%;
     padding-bottom: 0;
   }
   .icons {
@@ -386,6 +388,7 @@ img {
     flex-direction: flex-start;
     margin: 0;
     width: 300px;
+    z-index: 1;
   }
   .App {
     height: 0;
@@ -414,7 +417,7 @@ img {
     padding-left: 20%;
     margin-right: 0;
     margin-left: 0;
-    width: 500px;
+    width: 300px;
   }
   .skills {
     width: 300px;
@@ -426,10 +429,14 @@ img {
     margin-top: 5%;
   }
   .scroll {
-    margin-top: 50px;
+    margin-top: 40px;
   }
   .top {
     flex-direction: column;
+  }
+
+  .iconPicture {
+    height: 50px;
   }
   @keyframes reactAnimate {
     0% {
