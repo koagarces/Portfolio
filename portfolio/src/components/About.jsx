@@ -5,11 +5,11 @@ export const About = () => {
         <div className="description">
           <h1 className="question">Who am I?</h1>
           <div className="about">
-            I am a Software Developer with both a creative and technical
-            background. As a college student, I pursued general engineering and
-            began my love for content creation. My approach to problem-solving
-            embraces my background which allows innovative ideas to take place
-            in my work flow.
+            I am a Software Developer with a high passion for front end
+            development. My skills are highlighted in react and the javascript
+            ecosystem. I love being challenged and learning, so I am prepard to
+            take on any challenge presented. I am HIGHLY motivated to be the
+            develper that you need at your company.
           </div>
         </div>
         <div className="photo">
@@ -24,7 +24,7 @@ export const About = () => {
         {/* <h1 className="tech">TECHNICAL SKILLS</h1> */}
         <h2 className="front">Front End Skills</h2>
         <p className="front-skills">
-          React | CSS | HTML | JavaScript | Redux | TypeScript
+          JavaScript | React | CSS | HTML | Redux | TypeScript
         </p>
         <h2 className="front">Back End Skills</h2>
         <p className="front-skills">
