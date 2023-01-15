@@ -354,7 +354,7 @@ img {
 
 /* Mobile Friendly */
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
   .aboutSection {
     display: flex;
     flex-direction: column;
@@ -468,7 +468,9 @@ img {
     margin-top: 40px;
   }
   .top {
-    flex-direction: column;
+    display: block;
+    margin-bottom: 15%;
+    margin-top: 10%;
   }
 
   .iconPicture {

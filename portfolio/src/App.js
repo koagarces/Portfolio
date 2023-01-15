@@ -19,7 +19,7 @@ const NavBar = styled.div`
   padding-top: 40px;
   justify-content: flex-end;
   /* padding-left: 100px; */
-  @media (max-width: 500px) {
+  @media (max-width: 900px) {
     width: 90%;
     /* padding: 10% 0 0 10%; */
     pointer-events: none;
@@ -42,7 +42,7 @@ const SideBar = styled.div`
   justify-content: flex-end;
   padding-right: 10%;
   margin: 2% 0 2% 0;
-  @media (max-width: 500px) {
+  @media (max-width: 900px) {
     display: flex;
     flex-direction: column;
     justify-content: center;

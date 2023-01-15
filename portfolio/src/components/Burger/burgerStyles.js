@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledBurger = styled.button`
   pointer-events: none;
   opacity: 0;
-  @media (max-width: 500px) {
+  @media (max-width: 900px) {
     opacity: 100%;
     pointer-events: auto;
     position: absolute;
