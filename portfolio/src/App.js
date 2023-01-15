@@ -21,79 +21,86 @@ const NavBar = styled.div`
   /* padding-left: 100px; */
   @media (max-width: 500px) {
     width: 90%;
-    padding: 10% 0 5% 10%;
+    /* padding: 10% 0 0 10%; */
     pointer-events: none;
     opacity: 0;
   }
 `;
 
 const SideBar = styled.div`
-  width: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-
-  flex-direction: column;
-  justify-content: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding-left: 10px;
-
+  /* padding-left: 10px; */
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 10%;
+  margin: 2% 0 2% 0;
   @media (max-width: 500px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50px;
+    width: 100%;
     height: 40px;
-    padding-left: 25%;
-    margin-top: 0;
+    padding-left: 0;
+    margin-top: 10%;
   }
 `;
 function App() {
   const [open, setOpen] = useState(false);
   return (
     <div className="App">
-      <Burger open={open} setOpen={setOpen} />
-      <Menu open={open} />
-      <NavBar className="navbar">
-        <Link to={"/"} className="navlink">
-          <span className="btnName">Home</span>
-        </Link>
-        <Link to={"/about"} className="navlink">
-          About
-        </Link>
-        <Link to={"/projects"} className="navlink">
-          Projects
-        </Link>
-        <Link to={"/contact"} className="navlink">
-          Contact
-        </Link>
-      </NavBar>
+      <div className="topLinksBox">
+        <Burger open={open} setOpen={setOpen} />
+        <Menu open={open} />
 
-      <SideBar className="sidebar ">
-        <a
-          href="https://drive.google.com/file/d/1KTeXJM76vxS3M981IpoVIbSEHRmenBAX/view?usp=sharing"
-          className="navlink"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FcDocument className="iconPicture" />
-        </a>
-        <a
-          href="https://github.com/koagarces"
-          className="navlink"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <GrGithub className="iconPicture" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/koa-garces/"
-          className="navlink"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <SiLinkedin className="iconPicture" />
-        </a>
-      </SideBar>
-
+        <NavBar className="navbar">
+          <Link to={"/"} className="navlink">
+            <span className="btnName">Home</span>
+          </Link>
+          <Link to={"/about"} className="navlink">
+            About
+          </Link>
+          <Link to={"/projects"} className="navlink">
+            Projects
+          </Link>
+          <Link to={"/contact"} className="navlink">
+            Contact
+          </Link>
+        </NavBar>
+        <SideBar className="sidebar ">
+          <a
+            href="https://drive.google.com/file/d/1KTeXJM76vxS3M981IpoVIbSEHRmenBAX/view?usp=sharing"
+            className="navlink"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FcDocument className="iconPicture" />
+          </a>
+          <a
+            href="https://github.com/koagarces"
+            className="navlink"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <GrGithub className="iconPicture" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/koa-garces/"
+            className="navlink"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <SiLinkedin className="iconPicture" />
+          </a>
+        </SideBar>
+      </div>
       <Routes>
         <Route index element={<Home />} />
         <Route path="/about" element={<About />} />

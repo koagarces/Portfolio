@@ -44,7 +44,7 @@
   font-size: calc(10px + 2vmin);
   color: rgb(255, 255, 255);
   justify-content: center;
-  padding-left: 100px;
+  /* padding-left: 100px; */
   width: 600px;
   margin-top: 50px;
 }
@@ -263,9 +263,11 @@
 }
 
 .skills {
-  margin: -40px 20% 0% 0;
-  padding-top: 80px;
-  padding-bottom: 40px;
+  margin: -40px 0 0% 0;
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  flex-direction: column;
 }
 
 .front {
@@ -273,8 +275,8 @@
   text-decoration: underline;
   text-decoration-color: red;
   font-size: 35px;
-  display: flex;
-  margin-left: 10%;
+  /* display: flex; */
+  /* margin-left: 10%; */
   margin-bottom: 2%;
 }
 
@@ -353,12 +355,31 @@ img {
 /* Mobile Friendly */
 
 @media (max-width: 500px) {
+  .aboutSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .order {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .topLinksBox {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
   .navlink {
     color: white;
     /* padding: 4px 10px; */
     /* margin-right: 20px; */
+    margin: 0;
     font-size: 15px;
     font-weight: 900;
+    /* padding-left: 0;
+    padding-right: 0; */
   }
   .navbar {
     justify-content: space-evenly;
@@ -371,63 +392,72 @@ img {
     height: 80px; */
   }
   .home {
+    display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     max-width: 500px;
   }
   .App-header {
-    width: 400px;
     min-height: 50px;
     margin: 0;
     margin-bottom: 0px;
-    padding-left: 14%;
-    padding-bottom: 0;
+    padding-left: 0;
+    padding-bottom: 30%;
   }
   .icons {
     /* margin-right: 0; */
-    padding: 0;
+    display: none;
+    /* padding: 0;
     display: flex;
     flex-direction: flex-start;
     margin: 0;
     width: 300px;
-    z-index: 1;
+    z-index: 1; */
   }
   .App {
-    height: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .about {
     font-size: 15px;
     display: flex;
-    justify-content: center;
-  }
-  .home {
+    margin: 0;
+    width: auto;
     justify-content: center;
   }
   .description {
     justify-content: center;
-    padding-right: 70%;
+    width: 80%;
+
     padding-bottom: 10%;
   }
   .question {
     justify-content: center;
+    margin: 0;
+    width: auto;
   }
   .koa {
     margin-right: 30px;
     margin-bottom: 10%;
   }
   .photo {
-    padding-left: 20%;
+    /* padding-left: 20%; */
     margin-right: 0;
     margin-left: 0;
     width: 300px;
   }
   .skills {
     width: 300px;
-    padding-left: 20%;
+    /* padding-left: 20%; */
+    margin: 0;
   }
   .contact-header {
     width: 400px;
-    padding-left: 10%;
+    padding-left: 0;
     margin-top: 5%;
   }
   .scroll {
