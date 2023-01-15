@@ -49,6 +49,7 @@ const SideBar = styled.div`
     width: 100%;
     height: 40px;
     padding-left: 0;
+    padding-right: 0;
     margin-top: 10%;
   }
 `;

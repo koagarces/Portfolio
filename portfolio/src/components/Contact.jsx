@@ -6,7 +6,7 @@ export const Contact = () => {
     <div className="home">
       <div className="contact-header">
         <h1>Reach Out!</h1>
-        <h3>
+        <h3 className="contactDesc">
           I'm looking for front-end positions but I am always open to full stack
           or back-end options as well!
         </h3>
