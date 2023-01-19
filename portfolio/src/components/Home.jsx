@@ -13,7 +13,7 @@ export const Home = () => {
               Hi I'm <span className="myName">Koa Garces</span>
             </h1>
             <h2>
-              <span className="career">Software Engineer</span> from Southern
+              <span className="career">Frontend Engineer</span> from Southern
               California
             </h2>
             <a

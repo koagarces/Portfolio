@@ -77,7 +77,7 @@ function App() {
         </NavBar>
         <SideBar className="sidebar ">
           <a
-            href="https://drive.google.com/file/d/1KTeXJM76vxS3M981IpoVIbSEHRmenBAX/view?usp=sharing"
+            href="https://docs.google.com/document/d/1eUGWOXjM8wqy1ITGPM76JYbn4QKssoLgAX52Jj7c3mk/edit?usp=sharing"
             className="navlink"
             target="_blank"
             rel="noreferrer"
