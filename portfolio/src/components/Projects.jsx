@@ -19,7 +19,15 @@ export const Projects = () => {
             />
           </div>
           <div className="detailsBox workChild">
-            <h3 className="projectText">Nelson Grinding</h3>
+            <h3 className="projectText">Nelson Grinding</h3>{" "}
+            <a
+              href="https://github.com/koagarces/nelsons-grinding"
+              className="navlink workLink"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <GrGithub /> GitHub
+            </a>
             <p className="projectText">
               A source of communication, information, and credibility for
               potential Nelson Grinding Customers. This applications features
@@ -29,14 +37,6 @@ export const Projects = () => {
             </p>
             <p className="projectText">React | React-Router</p>
             <p className="projectText">Email.js | Javascript</p>
-            <a
-              href="https://github.com/koagarces/nelsons-grinding"
-              className="navlink"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <GrGithub />
-            </a>
           </div>
         </a>
       </div>

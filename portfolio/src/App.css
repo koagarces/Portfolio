@@ -354,6 +354,43 @@ img {
   margin-bottom: 60px;
   text-decoration: none;
 }
+.nelsonImage {
+  width: 500px;
+}
+
+.nelsonGrinding {
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+  text-decoration: none;
+}
+
+.nelsonImage:hover {
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+}
+
+.detailsBox {
+  text-align: left;
+  width: 500px;
+}
+
+.workChild {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.locationBio {
+  margin-top: 0;
+}
+
+.workLink {
+  padding: 1%;
+}
+
+.careerBox {
+  margin: 0;
+}
 
 /* Mobile Friendly */
 
@@ -434,7 +471,7 @@ img {
   }
   .description {
     justify-content: center;
-    width: 80%;
+    width: 60%;
 
     padding-bottom: 10%;
   }
@@ -541,34 +578,18 @@ img {
       top: 100px;
     }
   }
-}
-
-.nelsonImage {
-  width: 500px;
-}
-
-.nelsonGrinding {
-  display: flex;
-  justify-content: center;
-  padding: 3%;
-  text-decoration: none;
-}
-
-.nelsonImage:hover {
-  border-style: solid;
-  border-color: white;
-  border-width: 2px;
-}
-
-.detailsBox {
-  text-align: left;
-  width: 500px;
-}
-
-.workChild {
-  padding-left: 2%;
-  padding-right: 2%;
-}
-.locationBio {
-  margin-top: 0;
+  .nelsonGrinding {
+    display: flex;
+    padding: 3%;
+    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nelsonImage {
+    width: 70%;
+  }
+  .detailsBox {
+    width: 70%;
+    text-align: center;
+  }
 }
