@@ -247,10 +247,13 @@
   position: relative;
   animation: htmlAnimate 2.1s infinite;
 }
-
+.career {
+  margin-bottom: 0;
+}
 .career:hover {
   color: black;
   background-color: red;
+  margin-bottom: 0;
 }
 
 .myName:hover {
@@ -538,4 +541,34 @@ img {
       top: 100px;
     }
   }
+}
+
+.nelsonImage {
+  width: 500px;
+}
+
+.nelsonGrinding {
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+  text-decoration: none;
+}
+
+.nelsonImage:hover {
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+}
+
+.detailsBox {
+  text-align: left;
+  width: 500px;
+}
+
+.workChild {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.locationBio {
+  margin-top: 0;
 }

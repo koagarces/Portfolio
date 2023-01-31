@@ -5,17 +5,17 @@ export const About = () => {
         <div className="description">
           <h1 className="question">Who am I?</h1>
           <div className="about">
-            I am a Software Developer with a high passion for front end
-            development. My skills are highlighted in react and the javascript
-            ecosystem. I love being challenged and learning, so I am prepard to
-            take on any challenge presented. I am HIGHLY motivated to be the
-            develper that you need at your company.
+            A Frontend Developer in the Greater Chicagoland Area looking to find
+            my next oppurtunity. I am searching for a role where I can utilize
+            my skillset in React, Javascript, CSS, Redux, HTML and Node.JS. My
+            dream is to be a profound Frontend Engineer in the software
+            industry.
           </div>
         </div>
         <div className="photo">
           <img
             className="koa"
-            src="https://uniim1.shutterfly.com/render/00-MYObA9_qGTLbUvWfy090B4qqNvdh7monO3KLvLrmGrFAI3RgOFDDf_ZLvK36gFxXVZV51t4MhjbEwRNyGscOgg?cn=THISLIFE&res=medium&ts=1653213735"
+            src="https://uniim1.shutterfly.com/render/00-MYObA9_qGTLbUvWfy090B4qqNvdh7monO3KLvLrmGrGtXZGDjg3YGmLr46A8vGQarnHjCyIZu59oV2we_kMG9A?cn=THISLIFE&res=medium&ts=1675194245"
             alt="profile pic"
           />
         </div>

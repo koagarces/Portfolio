@@ -12,12 +12,10 @@ export const Home = () => {
             <h1>
               Hi I'm <span className="myName">Koa Garces</span>
             </h1>
-            <h2>
-              <span className="career">Frontend Engineer</span> from Southern
-              California
-            </h2>
+            <h2 className="career">Frontend Engineer</h2>
+            <h2 className="locationBio">in the Chicago Metropolitan Area</h2>
             <a
-              href="https://drive.google.com/file/d/1KTeXJM76vxS3M981IpoVIbSEHRmenBAX/view?usp=sharing"
+              href="https://docs.google.com/document/d/1eUGWOXjM8wqy1ITGPM76JYbn4QKssoLgAX52Jj7c3mk/edit?usp=sharing"
               className="resume"
               target="_blank"
               rel="noreferrer"
