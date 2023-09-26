@@ -5,8 +5,8 @@ export const About = () => {
         <div className="description">
           <h1 className="question">Who am I?</h1>
           <div className="about">
-            A Frontend Developer in the Greater Chicagoland Area looking to find
-            my next oppurtunity. I am searching for a role where I can utilize
+            A Frontend Developer in Los Angeles looking to find
+            my next opportunity. I am searching for a role where I can utilize
             my skillset in React, Javascript, CSS, Redux, HTML and Node.JS. My
             dream is to be a profound Frontend Engineer in the software
             industry.
